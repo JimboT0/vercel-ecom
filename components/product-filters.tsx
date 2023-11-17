@@ -83,7 +83,7 @@ export function ProductFilters() {
                         const params = new URLSearchParams(searchParams)
                         const checked = event.currentTarget.dataset.state === "checked"
                         checked ? params.delete(section.id) : params.set(section.id, option.value)
-                        router.replace(`/?${params.toString()}`)
+                        router.replace(`shop/?${params.toString()}`)
                       }}
 
                     />

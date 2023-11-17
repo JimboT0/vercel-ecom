@@ -26,7 +26,14 @@ export function SiteHeader() {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
     const searchQuery = formData.get("search")
-    router.replace(`shop/?search=${searchQuery}`)
+    router.replace(`/shop/?search=${searchQuery}`)
+  }
+
+  function onBlogSubmit(event: React.SyntheticEvent<HTMLFormElement>) {
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget)
+    const searchQuery = formData.get("search")
+    router.replace(`/blog/?search=${searchQuery}`)
   }
 
   return (
@@ -40,13 +47,13 @@ export function SiteHeader() {
             <div className="md:hidden">
               <MiniNav />
             </div>
-            <form onSubmit={onSubmit} className="hidden items-center lg:inline-flex">
+            <form onSubmit={pathname.startsWith('/shop') ? onSubmit : onBlogSubmit} className="hidden items-center lg:inline-flex">
               <Input
                 id="search"
                 name="search"
                 type="search"
                 autoComplete="off"
-                placeholder="Search products..."
+                placeholder={pathname.startsWith('/shop') ? "Search products..." : "Search Posts..."}
                 className="h-9 lg:w-[300px]"
                 defaultValue={defaultSearchQuery}
               />

@@ -139,37 +139,5 @@ export const inventory: InventoryPost[] = [
     colors: ["black"],
     currency: "USD",
   },
-  {
-    id: "c5ef468d-d49e-4aa5-be5b-41f34af40b19",
-    sku: "brooks_sunglasses_1",
-    name: "Brooks Sunglasses",
-    description: `These are timeless sunglasses that are designed in California and handmade in Japan by master craftsmen. The Brooks frames are made with a keyhole bridge, one of the many details the brand includes in their construction.`,
-    price: 42000,
-    image:
-      "https://fullstackdotso.nyc3.cdn.digitaloceanspaces.com/brooks-sunglasses-1.jpg",
-    images: [
-      "https://fullstackdotso.nyc3.cdn.digitaloceanspaces.com/brooks-sunglasses-1.jpg",
-      "https://fullstackdotso.nyc3.cdn.digitaloceanspaces.com/brooks-sunglasses-2.jpg",
-    ],
-    sizes: ["one-size"],
-    categories: ["sunglasses"],
-    colors: ["yellow"],
-    currency: "USD",
-  },
-  {
-    id: "dd27c79d-97c3-47bb-9172-4ea74b096f6f",
-    sku: "dock_sunglasses_1",
-    name: "Dock Sunglasses",
-    description: `Our latest collection of handcrafted sunglasses features details like UV-protective lenses in shades specifically chosen to complement each frame, and all at a price that won't break the bank. We made these sunglasses with vintage-inspired acetate frames and a keyhole bridge.`,
-    price: 5599,
-    image:
-      "https://fullstackdotso.nyc3.cdn.digitaloceanspaces.com/dock-sunglasses-1.jpg",
-    images: [
-      "https://fullstackdotso.nyc3.cdn.digitaloceanspaces.com/dock-sunglasses-1.jpg",
-    ],
-    sizes: ["one-size"],
-    categories: ["sunglasses"],
-    colors: ["black"],
-    currency: "USD",
-  },
+
 ]
