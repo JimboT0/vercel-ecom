@@ -6,7 +6,6 @@ import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { BlogGrid } from "@/components/blog-grid"
 import { BlogSort } from "@/components/blog-sort"
-// import { seedSanityData } from "@/lib/seed"
 
 interface Props {
   searchParams: {
@@ -46,7 +45,6 @@ export default async function Page({ searchParams }: Props) {
     description,
     "slug": slug.current
     }`)
-  // await seedSanityData() this seeds data from seedSanityData
 
   return (
     <div>
