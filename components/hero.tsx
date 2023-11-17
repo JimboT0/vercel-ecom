@@ -18,17 +18,17 @@ const hero = () => {
                                     alt="ORIGINTIME"
                                     width={400}
                                     height={400}
-                                    className="w-full rounded-lg p-20" />
+                                    className="w-full rounded-lg p-5 pb-10 md:p-20" />
                                 <div>
-                                    <div className="pl-28 content-center">
+                                    <div className="md:pl-28 content-center">
                                         <a
-                                            className="w-[40%] text-center mb-2 inline-block rounded bg-black pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                                            className="w-[80%] md:w-[40%] text-center mb-2 inline-block rounded bg-black pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                                             role="button"
                                         >
                                             Shop Watches
                                         </a>
                                         <a
-                                            className="w-[40%] text-center inline-block rounded pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700"
+                                            className=" w-[80%] md:w-[40%] text-center inline-block rounded pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-black transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700"
                                             role="button"
                                         >
                                             Read
