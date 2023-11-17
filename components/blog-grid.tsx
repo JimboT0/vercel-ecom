@@ -37,6 +37,7 @@ export function BlogGrid({ posts }: Props) {
           <div className="w-full overflow-hidden rounded-lg  border-2 border-white dark:border-gray-800 hover:opacity-50"
             style={{ backgroundImage: `url(${urlForImage(post.images[0]).url()})` }}>
             <div className=" p-4">
+              
               <h1 className="text-white font-extrabold p-10 h-40">{post.name}</h1>
             </div>
           </div>
