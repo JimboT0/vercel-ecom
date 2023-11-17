@@ -18,7 +18,7 @@ function Nav() {
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
                                     <a
-                                        href="#"
+                                        href="/"
                                         className=" hover:bg-gray-700 text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Home
@@ -46,7 +46,7 @@ function Nav() {
                                     </a>
 
                                     <a
-                                        href="/Sell"
+                                        href="/sell"
                                         className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Sell
@@ -162,7 +162,7 @@ function Nav() {
                                         </a>
 
                                         <a
-                                            href="/Sell"
+                                            href="/sell"
                                             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                         >
                                             Sell

@@ -13,7 +13,10 @@ interface Props {
   posts: SanityPost[]
 }
 
+
 export function BlogGrid({ posts }: Props) {
+
+
   if (posts.length === 0) {
     return (
       <div className="mx-auto grid h-40 w-full place-items-center rounded-md border-2 border-dashed bg-gray-50 py-10 text-center dark:bg-gray-900">
@@ -28,25 +31,41 @@ export function BlogGrid({ posts }: Props) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:col-span-3 lg:gap-x-8">
+    <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:col-span-3 lg:gap-x-8 relative overflow-hidden">
       {posts.map((post) => (
-        <Link key={post._id} href={`/post/${post.slug}`} className="group text-sm">
-          <div className="w-full overflow-hidden rounded-lg border-2 border-gray-200 bg-gray-100 group-hover:opacity-75 dark:border-gray-800">
-            <Image
-              placeholder='blur'
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                shimmer(225, 150)
-              )}`}
-              src={urlForImage(post.images[0]).url()}
-              alt={post.name}
-              width={225}
-              height={150}
-              className=" object-fill object-center"
-            />
+        <Link key={post._id} href={`/post/${post.slug}`} className="group text-sm border-2 border-gray-200 dark:border-gray-800  rounded-xl">
+          <div className="w-full overflow-hidden rounded-lg  border-2 border-white dark:border-gray-800 hover:opacity-50"
+            style={{ backgroundImage: `url(${urlForImage(post.images[0]).url()})` }}>
+            <div className=" p-4">
+              <h1 className="text-white font-extrabold p-10 h-40">{post.name}</h1>
+            </div>
           </div>
-          <h3 className="mt-4 font-large">{post.name}</h3>
         </Link>
       ))}
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <Image
+              placeholder='blur'
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(1100, 150)
+              )}`}
+              src={urlForImage(post.images[0]).url()}
+              alt={post.name}
+              width={1100}
+              height={150}
+              className=" relative object-cover object-center h-[150px]"
+            /> */}

@@ -8,7 +8,7 @@ const hero = () => {
         <div>
             <section className="mb-40">
 
-                <div className=" px-6 py-12 text-center md:px-12 lg:text-left dark:bg-gradient-to-r from-stone-400 from-40% to-slate-700">
+                <div className=" px-6 text-center md:px-12 lg:text-left dark:bg-gradient-to-r from-stone-400 from-40% to-slate-700">
                     
                     <div className="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
                         <div className="grid items-center gap-12 lg:grid-cols-2">
