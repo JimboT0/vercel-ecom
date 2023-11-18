@@ -11,4 +11,7 @@ export const siteConfig = {
     { name: "Privacy Policy", href: "#" },
     { name: "FAQ", href: "#" },
   ],
+
+
+  
 }
