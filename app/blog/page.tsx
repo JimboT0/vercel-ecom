@@ -66,7 +66,7 @@ export default async function Page({ searchParams }: Props) {
               Posts
             </h2>
             <div className="grid-cols-1">
-              <BlogGrid posts={post} />
+              {/* <BlogGrid posts={post} /> */}
             </div>
           </section>
         </main>
