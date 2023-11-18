@@ -26,8 +26,8 @@ export interface SanityPost extends Omit<InventoryPost, "images"> {
 
 export async function getSanityPosts(): Promise<SanityPost[]> {
   const query = `*[_type == "post"]`;
-  const post = await client.fetch<SanityPost[]>(query);
-  return post;
+  const posts = await client.fetch<SanityPost[]>(query);
+  return posts;
 }
 
 
