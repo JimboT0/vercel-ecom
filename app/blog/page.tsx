@@ -55,7 +55,7 @@ export default async function Page({ searchParams }: Props) {
             <h1 className="text-xl font-bold tracking-tight sm:text-2xl">
               {post.length} result{post.length === 1 ? "" : "s"}
             </h1>
-            {/* <BlogSort /> */}
+            <BlogSort />
           </div>
 
           <section aria-labelledby="products-heading" className="pb-24 pt-6">
@@ -63,7 +63,7 @@ export default async function Page({ searchParams }: Props) {
               Posts
             </h2>
             <div className="grid-cols-1">
-              {/* <BlogGrid posts={post} /> */}
+              <BlogGrid posts={post} />
             </div>
           </section>
         </main>
