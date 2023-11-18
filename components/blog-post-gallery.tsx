@@ -15,7 +15,6 @@ export function BlogPostGallery({post}: Props) {
   const [selectedImage, setSelectedImage] = useState(0)
   return (
     <div className="flex flex-col-reverse">
-      {/* Image Grid */}
       <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
         <ul className="grid grid-cols-4 gap-6">
           {post.images.map((image, index) => (
@@ -45,8 +44,6 @@ export function BlogPostGallery({post}: Props) {
           ))}
         </ul>
       </div>
-
-      {/* Main Image */}
       <div className="aspect-h-1 aspect-w-1 w-full">
         <Image
           priority
