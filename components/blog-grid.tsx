@@ -9,12 +9,26 @@ import { XCircle } from "lucide-react"
 import { SanityPost } from "@/config/blog-inventory"
 import { shimmer, toBase64 } from "@/lib/image"
 
+import { getSanityPosts } from "@/config/blog-inventory";
+
 interface Props {
   posts: SanityPost[]
 }
 
 
+
+export async function getStaticProps() {
+  const posts = await getSanityPosts();
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+
+
 export function BlogGrid({ posts }: Props) {
+  
 
 
   if (posts.length === 0) {
@@ -54,19 +68,3 @@ export function BlogGrid({ posts }: Props) {
 
 
 
-
-
-
-
-
-{/* <Image
-              placeholder='blur'
-              blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                shimmer(1100, 150)
-              )}`}
-              src={urlForImage(post.images[0]).url()}
-              alt={post.name}
-              width={1100}
-              height={150}
-              className=" relative object-cover object-center h-[150px]"
-            /> */}
