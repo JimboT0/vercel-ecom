@@ -124,22 +124,6 @@ export const inventory: InventoryProduct[] = [
     currency: "USD",
   },
   {
-    id: "83ea928a-d834-4c6d-a588-4c93ec2de3c0",
-    sku: "down_mittens_1",
-    name: "Down Mittens",
-    description: `Founded in Japan and now based in the U.S., Snow Peak has been making premium outdoor gear inspired by the mountainous region of Niigata, Japan, since 1958. Crafted in durable materials, these mittens are insulated with duckdown to keep your hands warm no matter through which polar vortex your day takes you.`,
-    price: 13999,
-    image:
-      "https://fullstackdotso.nyc3.cdn.digitaloceanspaces.com/down-mittens-1.jpg",
-    images: [
-      "https://fullstackdotso.nyc3.cdn.digitaloceanspaces.com/down-mittens-1.jpg",
-    ],
-    sizes: ["s", "m", "l", "xl"],
-    categories: ["gloves"],
-    colors: ["black"],
-    currency: "USD",
-  },
-  {
     id: "c5ef468d-d49e-4aa5-be5b-41f34af40b19",
     sku: "brooks_sunglasses_1",
     name: "Brooks Sunglasses",

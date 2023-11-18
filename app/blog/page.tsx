@@ -7,8 +7,6 @@ import { cn } from "@/lib/utils"
 import { BlogGrid } from "@/components/blog-grid"
 import { BlogSort } from "@/components/blog-sort"
 
-// import { seedSanityData } from "@/lib/post-seed"
-
 interface Props {
   searchParams: {
     date?: string
@@ -21,7 +19,6 @@ interface Props {
 }
 
 export default async function Page({ searchParams }: Props) {
-  // await seedSanityData()
 
   const { date = 'desc', price, color, category, size, search } = searchParams
   const priceOrder = price ? `| order(price ${price})` : ""
@@ -66,7 +63,7 @@ export default async function Page({ searchParams }: Props) {
               Posts
             </h2>
             <div className="grid-cols-1">
-              {/* <BlogGrid posts={post} /> */}
+              <BlogGrid posts={post} />
             </div>
           </section>
         </main>

@@ -30,7 +30,7 @@ export function BlogGrid({ posts }: Props) {
 
   return (
     <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:col-span-3 lg:gap-x-8 relative overflow-hidden">
-      {/* {posts.map((post) => (
+      {posts.map((post) => (
         <Link key={post._id} href={`/post/${post.slug}`} className="group text-sm border-2 border-gray-200 dark:border-gray-800  rounded-xl">
           <div className="w-full overflow-hidden rounded-lg  border-2 border-white dark:border-gray-800 hover:opacity-50"
             style={{ backgroundImage: `url(${urlForImage(post.images[0]).url()})` }}>
@@ -40,7 +40,7 @@ export function BlogGrid({ posts }: Props) {
             </div>
           </div>
         </Link>
-      ))} */}
+      ))}
     </div>
   )
 }
