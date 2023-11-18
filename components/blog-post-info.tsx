@@ -5,7 +5,7 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { useShoppingCart } from "use-shopping-cart"
 
-import { SanityPost } from "@/config/blog-inventory"
+import { SanityPost } from "@/config/post-inventory"
 import { getSizeName } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/components/ui/use-toast"

@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { urlForImage } from "@/sanity/lib/image"
 
-import { SanityPost} from "@/config/blog-inventory"
+import { SanityPost} from "@/config/post-inventory"
 import { shimmer, toBase64 } from "@/lib/image"
 
 interface Props {

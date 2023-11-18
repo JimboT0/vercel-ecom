@@ -6,10 +6,11 @@ import { urlForImage } from "@/sanity/lib/image"
 import { XCircle } from "lucide-react"
 
 
-import { SanityPost } from "@/config/blog-inventory"
+import { SanityPost } from "@/config/post-inventory"
 import { shimmer, toBase64 } from "@/lib/image"
 
-import { getSanityPosts } from "@/config/blog-inventory";
+
+
 
 interface Props {
   posts: SanityPost[]
@@ -17,18 +18,8 @@ interface Props {
 
 
 
-export async function getStaticProps() {
-  const posts = await getSanityPosts();
-  return {
-    props: {
-      posts,
-    },
-  };
-}
-
-
 export function BlogGrid({ posts }: Props) {
-  
+
 
 
   if (posts.length === 0) {
