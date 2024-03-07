@@ -19,42 +19,42 @@ function Nav() {
                                 <div className="ml-10 flex items-baseline space-x-4">
                                     <a
                                         href="/"
-                                        className=" hover:bg-gray-700 text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
+                                        className=" hover:bg-gray-700 text-gray-800 dark:text-gray-300 px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Home
                                     </a>
 
                                     <a
                                         href="/about"
-                                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         About
                                     </a>
 
                                     <a
                                         href="/shop"
-                                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Shop
                                     </a>
 
                                     <a
                                         href="/blog"
-                                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Blog
                                     </a>
 
                                     <a
                                         href="/sell"
-                                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Sell
                                     </a>
 
                                     <a
                                         href="/contact"
-                                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Contact
                                     </a>

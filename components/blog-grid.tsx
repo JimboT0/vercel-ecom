@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { urlForImage } from "@/sanity/lib/image"
 import { XCircle } from "lucide-react"
+import { shimmer, toBase64 } from "@/lib/image"
 
 
 import { SanityPost } from "@/config/post-inventory"
@@ -29,17 +30,25 @@ export function BlogGrid({ posts }: Props) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:col-span-3 lg:gap-x-8 relative overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-10 lg:col-span-3 lg:gap-x-4 relative overflow-hidden">
       {posts.map((post) => (
-        <Link key={post._id} href={`/post/${post.slug}`} className="group text-sm border-2 border-gray-200 dark:border-gray-800  rounded-xl">
-          <div className="w-full overflow-hidden rounded-lg  border-2 border-white dark:border-gray-800 hover:opacity-50"
-            style={{ backgroundImage: `url(${urlForImage(post.images[0]).url()})` }}>
-            <div className=" p-4">
-              
-              <h1 className="text-white font-extrabold p-10 h-40">{post.name}</h1>
-            </div>
-          </div>
-        </Link>
+        <Link key={post._id} href={`/post/${post.slug}`} className="group text-sm mx-auto pb-10 p-4 bg-gray-100/20 dark:bg-gray-800/20 border rounded-lg ">
+        <div className="items-center aspect-h-1 h-72 aspect-w-1 w-72 overflow-hidden rounded-lg border-2 border-gray-200 bg-gray-100 group-hover:opacity-75 dark:border-gray-800">
+          <Image
+            placeholder='blur'
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(225, 280)
+            )}`}
+            src={urlForImage(post.images[0]).url()}
+            alt={post.name}
+            width={225}
+            height={280}
+            className="h-72 w-72 object-fit object-center"
+          />
+        </div>
+        <h3 className="mt-4 font-extrabold text-black dark:text-white">{post.name}</h3>
+        <p className="pt-4 text-gray-800 dark:text-white">This is a mini desc</p>
+      </Link>
       ))}
     </div>
   )

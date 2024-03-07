@@ -85,35 +85,35 @@ function MiniNav() {
 
                                         <a
                                             href="#"
-                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-5 py-2 rounded-md text-base font-medium"
                                         >
                                             Home
                                         </a>
 
                                         <a
                                             href="/about"
-                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-5 py-2 rounded-md text-base font-medium"
                                         >
                                             About
                                         </a>
 
                                         <a
                                             href="/shop"
-                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-5 py-2 rounded-md text-base font-medium"
                                         >
                                             Shop
                                         </a>
 
                                         <a
                                             href="/blog"
-                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-5 py-2 rounded-md text-base font-medium"
                                         >
                                             Blog
                                         </a>
 
                                         <a
                                             href="/contact"
-                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-5 py-2 rounded-md text-base font-medium"
                                         >
                                             Contact
                                         </a>

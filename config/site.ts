@@ -5,10 +5,10 @@ export const siteConfig = {
   description: "OriginTime",
   footer: [
     { name: "Home", href: "/" },
-    { name: "About", href: "#" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
     { name: "Terms & Conditions", href: "#" },
     { name: "Shipping & Return Policy", href: "#" },
-    { name: "Privacy Policy", href: "#" },
     { name: "FAQ", href: "#" },
   ],
 

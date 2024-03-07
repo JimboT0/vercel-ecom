@@ -22,9 +22,7 @@ export default async function Page({ params }: Props) {
     price,
     currency,
     description,
-    sizes,
     categories,
-    colors,
     "slug": slug.current
     
 

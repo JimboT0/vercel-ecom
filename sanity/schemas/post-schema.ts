@@ -32,37 +32,20 @@ export const post = defineType({
             of: [{type: 'string'}]
         },
         {
-            name: "sizes",
-            title: "Sizes",
-            type: "array",
-            of: [{type: 'string'}]
-        },
-        {
-            name: "colors",
-            title: "Colors",
-            type: "array",
-            of: [{type: 'string'}]
-        },
-        {
             name: "description",
             title: "Description",
             type: "string",
         },
         {
-            name: "sku",
-            title: "SKU",
+            name: "description2",
+            title: "Description2",
             type: "string",
         },
         {
-            name: "currency",
-            title: "Currency",
+            name: "description3",
+            title: "Description3",
             type: "string",
         },
-        {
-            name: "price",
-            title: "Price",
-            type: "number",
-        }
     ]
 
 })

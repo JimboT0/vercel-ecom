@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import { Edit, ShoppingBag } from "lucide-react"
-import { useShoppingCart } from "use-shopping-cart"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -17,7 +16,6 @@ export function SiteHeader() {
   const pathname = usePathname()
   const router = useRouter()
   const searchParams = useSearchParams()
-  const { cartCount } = useShoppingCart()
   const defaultSearchQuery = searchParams.get('search') ?? ""
 
   if (pathname.startsWith("/studio")) return null
@@ -67,13 +65,7 @@ export function SiteHeader() {
 
 
         <div className="flex items-center space-x-1 order-3">
-          <Link href="/cart">
-            <Button size="sm" variant="ghost">
-              <ShoppingBag className="h-5 w-5" />
-              <span className="ml-2 text-sm font-bold">{cartCount}</span>
-              <span className="sr-only">Cart</span>
-            </Button>
-          </Link>
+
           <ThemeToggle />
 
         </div>

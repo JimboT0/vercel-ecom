@@ -14,34 +14,22 @@ interface Props {
   product: SanityProduct
 }
 
+
 export function ProductInfo({product}: Props) {
- const [selectedSize, setSelectedSize] = useState(product.sizes[0])
- const {addItem, incrementItem, cartDetails} = useShoppingCart()
  const {toast} = useToast()
- const isInCart = !!cartDetails?.[product._id]
 
-  function addToCart() {
-    const item= {
-     ...product, 
-     product_data: {
-      size: selectedSize
-    }
-   }
-   isInCart ? incrementItem(item._id) : addItem(item)
-   toast({
-    title: `${item.name} (${getSizeName(selectedSize)})`,
-    description: "Product added to cart",
-    action: (
-      <Link href='/cart'>
-        <Button variant='link' className="gap-x-2 whitespace-nowrap">
-          <span>Open Cart</span>
-          <ArrowRight className="h-5 w-5"/>
+ const createEnquiryLink = () => {
+  const email = 'james@origintime.co.za';
+  const subject = `Enquiry about ${product.name}`;
+  const message = `Good day, I would be interested in the ${product.name}, Please tell me more about it.`;
 
-        </Button>
-      </Link>
-    )
-   })
-  }
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+
+  // Open the user's default email client
+  window.location.href = mailtoLink;
+};
+
+
 
   return (
     <div className="mt-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
@@ -57,30 +45,16 @@ export function ProductInfo({product}: Props) {
         <div className="space-y-6 text-base">{product.description}</div>
       </div>
 
-      <div className="mt-4">
-        <p>
-          Size: <strong>{getSizeName(product.sizes[0])}</strong>
-        </p>
-        {product.sizes.map((size) => (
-          <Button 
-          onClick={() => setSelectedSize(size)} 
-          key={size} 
-          variant={ selectedSize === size ? "default" : "outline"}
-          className="mr-2 mt-4">
-            {getSizeName(size)}
-          </Button>
-        ))}
-      </div>
-
       <form className="mt-6">
         <div className="mt-4 flex">
-          <Button
-          onClick={addToCart}
+
+          <button
             type="button"
-            className="w-full bg-violet-600 py-6 text-base font-medium text-white hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-violet-500"
+            className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded w-40 text-center"
+            onClick={createEnquiryLink}
           >
-            Add to cart
-          </Button>
+            Enquire
+          </button>
         </div>
       </form>
     </div>
